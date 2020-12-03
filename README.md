@@ -4,7 +4,7 @@
 - Keras
 - OpenCV
 ## Dataset Preparation
-In this project, we use Emotion Dataset from Kaggle as our dataset. This dataset have 27,462 images with 5 category [“Angry”, “Happy”, “Neutral”, “Sad”, “Surprise”]. The images are in grayscale with 48px width and 48px height. Before training, we need to preprocess our dataset. Usually we need to implement data augmentation to increase training dataset and normalization to prevent bias on the dataset.
+In this project, we use [Emotion Dataset from Kaggle](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) as our dataset. This dataset have 27,462 images with 5 category [“Angry”, “Happy”, “Neutral”, “Sad”, “Surprise”]. The images are in grayscale with 48px width and 48px height. Before training, we need to preprocess our dataset. Usually we need to implement data augmentation to increase training dataset and normalization to prevent bias on the dataset.
 ```
 train_datagen = ImageDataGenerator(
     rescale=1./255,
@@ -203,3 +203,6 @@ As you can see, even though the accuracy only 55%, the result is quite good.
 
 ## Conclusion
 In this article, I covered the system flow of Emotion Detection from source of getting emotion dataset, dataset preprocessing, neural network configuration, and real-time detection using OpenCV. Feel free to contact me if you facing any problems. Thanks.
+
+## Blog
+[TechyHans - Han Sheng's Blog](https://techyhans.com)
